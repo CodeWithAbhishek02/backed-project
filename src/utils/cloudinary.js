@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary'; 
-const fs = require('fs');
+import fs from 'fs';
+
 
 
 // Configuration
@@ -20,7 +21,7 @@ const uploadToCloudinary = async (localFilePath, publicId = null) => {
         })
 
         // file has been successfully uploaded
-        console.log('file is uploded on cloudinary', uploadResult.url);
+        // console.log('file is uploded on cloudinary', uploadResult.url);
         
         //Delete local file after upload
         fs.unlinkSync(localFilePath);

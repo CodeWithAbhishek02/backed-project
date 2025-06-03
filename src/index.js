@@ -5,7 +5,7 @@ import { app } from "./app.js";
  
 // configration of .env
 dotenv.config({
-    path: './env'
+    path: './.env'
 })
 
 // Datebase Connection
